@@ -1,0 +1,13 @@
+一、单页导航地址（点击导航，顺滑的跳到对应的模块去）
+    jquery.singlePageNav.min.js
+    https://github.com/jeroenweustink/single-page-nav
+
+二、滚动滚动条或窗口发生变化时，可视区域内的模块有动画效果（wow.js插件+animate.css）
+     1、wow.js  (JS插件)
+        https://github.com/matthieua/WOW
+        http://www.jq22.com/yanshi1705
+
+     2、animated.css
+        官方教程与下载地址：
+        https://github.com/daneden/animate.css
+        演示：https://daneden.github.io/animate.css/

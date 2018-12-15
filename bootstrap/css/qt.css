@@ -1,0 +1,40 @@
+ .menu{ 
+ 	background-color: #fff; 
+
+ }
+ .lbt{
+ 	margin-top: 56px;
+ }
+.banner{
+	width: 100%;
+	background: url(../images/home-bg.jpg);
+}
+.bg{
+	width: 100%;
+	background: rgba(0,0,0,.6);
+}
+.bg-box{
+	width: 81%;
+}
+.wow {
+	visibility:hidden; 
+}
+.xtp img{
+	width: 6.31rem;
+	height: 6.31rem;
+}
+.tab-p {
+	font-size: 14px;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+/*.flex .col-md-3 {
+    flex: 0 0 23%;
+    max-width: 23%;
+}*/
+.dt{
+	width: 100%;
+	background: url(../images/contact-bg.jpg);
+}

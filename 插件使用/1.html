@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教育资源网</title>
+	<link rel="stylesheet" href="2.css" class='link'>
+	<script src='jquery1.42.min.js'></script>
+	<script src='jquery.SuperSlide.2.1.js'></script>
+	<script src='jquery.cookie.js'></script>
+</head>
+<body>
+	<div class='box'>
+		<!-- 顶部登录换肤 -->
+		<div class='top_enter'>
+			<div class='top_box'>
+				<div class='top_box_left'>
+					<span>您好,欢迎进入湖南基础教育资源网！</span>
+					<span>今日：2018年10月12日 星期五</span>
+				</div>
+				<div class='top_box_right'>
+					<a href="#">收藏首页&nbsp;</a>
+					<span>|</span>
+					<a href="#">&nbsp;帮助中心&nbsp;</a>
+					<span>|</span>
+					<a href="#">
+						&nbsp;换肤
+					</a>
+						<button class='orange'><span></span></button>
+						<button class='blue' id='g'><span></span></button>
+				</div>
+			</div>
+		</div>
+		<!-- 主页面大盒子 -->
+		<div class='middle'>
+			<!-- 顶部logo栏 -->
+			<div class='logo_box'>
+				<a href="#">
+					<img src="psd/img/11.png" alt="">
+				</a>
+				<div class='location_box'>
+					<h4>省中心</h4>
+					<div class='location'>
+						<a href="#">切换市县</a>
+					</div>
+					<div class='location_wrap_box'>
+						<div class='location_wrap'>
+							<div class='location_wrap_top'>
+								<a href="#" class='location_wrap_b'>省中心</a>
+								<a href="#">长沙</a>
+								<a href="#">株洲</a>
+								<a href="#">衡阳</a>
+								<a href="#">张家界</a>
+								<a href="#">益阳</a>
+								<a href="#">郴州</a>
+								<a href="#">怀化</a>
+								<a href="#">永州</a>
+								<a href="#">湘西</a>
+							</div>
+							<div class='location_wrap_bottom'>
+								<span class='location_wrap_bottom_dyxq'>对应县区</span>
+								<a href="#">无</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 搜索 -->
+				<div class='search_box'>
+					<form action="#" class='search_f'>
+						<div class='search_left'>
+							<a href=javascript:; class='gjzyw'>国家资源网</a>
+							<div class='gjzyw_wrap'>
+								<span class='gjzyw_wrap1'>站内资源</span>
+								<span class='gjzyw_wrap2'>国家资源网</span>
+							</div>
+						</div>
+						<input type="text" class='search_ipt' placeholder='请输入搜索关键字'>
+						<input type="button" class='search_bt'>
+					</form>
+					<a href="#" class='search_advanced'>高级搜索</a>
+				</div>
+			</div>
+			<!-- 导航栏 -->
+			<div class='nav_bar'>
+				<div class='nav_bar_one_class'>
+					<a href="#" class='nav_bar_sy'>首 页</a>
+				</div>	
+				<span>|</span>
+				<div class='nav_bar_one_class1'>
+					<a href="#" class='nav_bar_zyzx'>资源中心</a>
+					<div class='nav_bar_zyzx_wrap_box'>
+						<a href="#" class='nav_bar_zyzx_wrap'>学科资源</a>
+						<a href="#" class='nav_bar_zyzx_wrap'>自主研发资源</a>
+						<a href="#" class='nav_bar_zyzx_wrap'>专题资源</a>
+					</div>
+				</div>
+				<span>|</span>
+				<div class='nav_bar_one_class2'>
+					<a href="#" class='nav_bar_sy2'>教师空间</a>
+				</div>	
+				<span>|</span>
+				<div class='nav_bar_one_class2'>
+					<a href="#" class='nav_bar_sy2'>教师培训</a>
+				</div>	
+				<span>|</span>
+				<div class='nav_bar_one_class2'>
+					<a href="#" class='nav_bar_sy2'>微课平台</a>
+				</div>	
+				<span>|</span>
+				<div class='nav_bar_one_class1'>
+					<a href="#" class='nav_bar_zyzx'>工作室</a>
+					<div class='nav_bar_zyzx_wrap_box'>
+						<a href="#" class='nav_bar_zyzx_wrap'>名师工作室</a>
+						<a href="#" class='nav_bar_zyzx_wrap'>工作室</a>
+					</div>
+				</div>
+				<span>|</span>
+				<div class='nav_bar_one_class1'>
+					<a href="#" class='nav_bar_zyzx'>一师一优课</a>
+					<div class='nav_bar_zyzx_wrap_box'>
+						<a href="#" class='nav_bar_zyzx_wrap'>教师入口</a>
+						<a href="#" class='nav_bar_zyzx_wrap'>管理员入口</a>
+					</div>
+				</div>
+			</div>
+			<!-- 通知栏 -->
+			<div class='notice_box'>
+				<!-- 左边三个板块 -->
+				<div class='notice_left'>
+					<div class='notice_left_top'>
+						<i class='notice_left_top_loudspeaker'></i>
+						<span class='notice_left_top_title'>通知公告：</span>
+						<span class='notice_left_top_text'>关于召开湖南省2013年中小学部分学科教学资源开发研讨会的通知</span>
+						<i class='notice_left_top_new'></i>
+						<span class='notice_left_top_date'>04/10</span>
+						<a href="#" class='notice_left_top_more'>更多>></a>
+					</div>
+					<!-- 用户登录 -->
+					<div class='notice_left_bottom1'>
+						<div class='notice_left_bottom1_top'>
+							<i class='notice_left_bottom1_top_img'></i>
+							<span class='notice_left_bottom1_top_title'>用户登录</span>
+						</div>
+						<form action="#">
+							<div class='username_box'>
+								<span>用户名: </span><input type="text" class='username'>
+							</div>
+							<div class='password_box'>
+								<span>密&nbsp;&nbsp;&nbsp;码: </span><input type="text" class='password'>
+							</div>
+							<div class='verification_box'>
+								<span>验证码: </span><input type="text" class='verification'>
+								<img src="psd/img/52.png" class='yzm_img'>
+							</div>
+						</form>
+						<a href='#'class='Login_bt'>
+							<img src="psd/img/49.png">
+						</a>
+						<span class='wlmm'>忘了密码？请</span>
+						&nbsp;
+						<a href="#" class='click_here'>请点击这里</a>
+					</div>
+					<!-- 轮播 （插件框架）-->
+					<div id="slideBox" class="slideBox">
+						<div class="bd">
+							<ul>
+								<li><a href="#" target="_blank"><img src="psd/img/slideshow/1.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="psd/img/slideshow/2.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="psd/img/slideshow/3.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="psd/img/slideshow/4.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="psd/img/slideshow/5.jpg" /></a></li>
+							</ul>
+						</div>
+						<div class="hd">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<a class="prev" href="javascript:void(0)"></a>
+						<a class="next" href="javascript:void(0)"></a>
+					</div>	
+				</div>
+				<!-- 右边一个板块 -->
+				<div class='notice_right'>
+					<div class='notice_right_top'>
+						<i class="notice_left_bottom1_top_img"></i>
+						<span class="notice_left_bottom1_top_title">各地活跃度排行</span>
+						<a href="#" class='notice_left_bottom1_top_city' id='shi'>市</a>
+						<a href="#" class='notice_left_bottom1_top_county'>县</a>
+					</div>
+					<div class='notice_right_middle'>
+						<div class='notice_right_middle_title'>
+							<span class='notice_right_middle_toponymy'>地名</span>
+							<span class='notice_right_middle_yycs'>活跃度</span>
+						</div>
+						<div class='notice_right_middle_content_box_box'>
+							<div class='notice_right_middle_content_box_box_h'>
+								<div class='notice_right_middle_content_box'>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img1'></i>
+										<span class='notice_right_middle_content1_text1'>长沙市</span>
+										<span class='notice_right_middle_content1_num1'>9865231</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img2'></i>
+										<span class='notice_right_middle_content1_text2'>衡阳市</span>
+										<span class='notice_right_middle_content1_num2'>3254224</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img3'></i>
+										<span class='notice_right_middle_content1_text3'>株洲市</span>
+										<span class='notice_right_middle_content1_num3'>1576866</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img4'></i>
+										<span class='notice_right_middle_content1_text4'>益阳市</span>
+										<span class='notice_right_middle_content1_num4'>856534</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img5'></i>
+										<span class='notice_right_middle_content1_text5'>常德市</span>
+										<span class='notice_right_middle_content1_num5'>821424</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img6'></i>
+										<span class='notice_right_middle_content1_text6'>郴州市</span>
+										<span class='notice_right_middle_content1_num6'>634313</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img7'></i>
+										<span class='notice_right_middle_content1_text7'>湘潭市</span>
+										<span class='notice_right_middle_content1_num7'>546579</span>
+									</p>
+								</div>
+								<div class='notice_right_middle_content_box'>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img1'></i>
+										<span class='notice_right_middle_content1_text1'>祁阳县</span>
+										<span class='notice_right_middle_content1_num1'>5483522</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img2'></i>
+										<span class='notice_right_middle_content1_text2'>隆回县</span>
+										<span class='notice_right_middle_content1_num2'>5358860</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img3'></i>
+										<span class='notice_right_middle_content1_text3'>宜章县</span>
+										<span class='notice_right_middle_content1_num3'>4535832</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img4'></i>
+										<span class='notice_right_middle_content1_text4'>永兴县</span>
+										<span class='notice_right_middle_content1_num4'>3917691</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img5'></i>
+										<span class='notice_right_middle_content1_text5'>宁远县</span>
+										<span class='notice_right_middle_content1_num5'>3061383</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img6'></i>
+										<span class='notice_right_middle_content1_text6'>双牌县</span>
+										<span class='notice_right_middle_content1_num6'>2880438</span>
+									</p>
+									<p class='notice_right_middle_content1'>
+										<i class='notice_right_middle_content1_img7'></i>
+										<span class='notice_right_middle_content1_text7'>湘潭市</span>
+										<span class='notice_right_middle_content1_num7'>546579</span>
+									</p>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+			</div>
+			<!-- 左边两图（1） -->
+			<div class='left_img'>
+				<a href="#">
+					<img src="psd/img/10.png" alt="">
+				</a>
+				<a href="#">
+					<img src="psd/img/12.png" alt="">
+				</a>
+			</div>
+			<!-- 应用栏 -->
+			<div class='use_box'>
+				<span class='use_box_left'></span>
+				<span class='use_box_right'></span>
+				<div class='use_top'>
+					<div class='use_tjyy use_top_b' id='use_top_div'>推荐应用</div>
+					<div class='use_mfyy'>免费应用</div>
+					<div class='use_sfyy'>收费应用</div>
+					<span class='use_top_more'>更多>></span>
+				</div>
+				<div class='use_content'>
+					<div class='use_skewing_box'>
+						<div class='use_skewing_hidden'>
+							<!-- 第一个 -->
+							<div class='use_skewing1' style='display:block;'>
+								<a href="#" class='use_img'>
+									<i class='use_img1'></i>
+									<span class='use_img_text'>华师星城仿真</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img2'></i>
+									<span class='use_img_text'>堂堂网</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img3'></i>
+									<span class='use_img_text'>班级作业管理</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img4'></i>
+									<span class='use_img_text'>数字图书</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img5'></i>
+									<span class='use_img_text'>在线备课</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img6'></i>
+									<span class='use_img_text'>智能教学平台</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img7'></i>
+									<span class='use_img_text'>基教在线</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img8'></i>
+									<span class='use_img_text'>教学应用研究</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img9'></i>
+									<span class='use_img_text'>口说学习平台</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img10'></i>
+									<span class='use_img_text'>MyET英语</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img11'></i>
+									<span class='use_img_text'>龙语语文</span>
+								</a>
+							</div>
+							<!-- 第二个 -->
+							<div class='use_skewing2' style='display:none;'>
+								<a href="#" class='use_img'>
+									<i class='use_img7'></i>
+									<span class='use_img_text'>基教在线</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img2'></i>
+									<span class='use_img_text'>堂堂网</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img1'></i>
+									<span class='use_img_text'>华师星城仿真</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img4'></i>
+									<span class='use_img_text'>数字图书</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img3'></i>
+									<span class='use_img_text'>班级作业管理</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img5'></i>
+									<span class='use_img_text'>在线备课</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img6'></i>
+									<span class='use_img_text'>智能教学平台</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img9'></i>
+									<span class='use_img_text'>口说学习平台</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img8'></i>
+									<span class='use_img_text'>教学应用研究</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img10'></i>
+									<span class='use_img_text'>MyET英语</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img11'></i>
+									<span class='use_img_text'>龙语语文</span>
+								</a>
+							</div>
+							<!-- 第三个 -->
+							<div class='use_skewing3' style='display:none;'>
+								<a href="#" class='use_img'>
+									<i class='use_img2'></i>
+									<span class='use_img_text'>堂堂网</span>
+								</a>
+								<a href="#" class='use_img'>
+									<i class='use_img10'></i>
+									<span class='use_img_text'>MyET英语</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 左边侧面栏 -->
+			<div class='leftbox'>
+				<!-- 第一个 -->
+				<div class='leftbox_one'>
+					<div class='leftbox_one_top'>
+						<i></i>
+						<span>空间访问量</span>
+					</div>
+					<div class='leftbox_one_content'>
+						<div class='leftbox_one_content_title'>
+							<span class='leftbox_one_content_title_t1'>名称</span>
+							<span class='leftbox_one_content_title_t2'>活跃度</span>
+							<p class='leftbox_one_content_p1'>
+								<span class='leftbox_one_content_p1_t1'>张军勇</span>
+								<span class='leftbox_one_content_p1_t2'>3254224</span>
+							</p>
+							<p class='leftbox_one_content_p2'>
+								<span class='leftbox_one_content_p1_t1'>周晋</span>
+								<span class='leftbox_one_content_p1_t2'>1576866</span>
+							</p>
+							<p class='leftbox_one_content_p3'>
+								<span class='leftbox_one_content_p1_t1'>李丽</span>
+								<span class='leftbox_one_content_p1_t2'>856534</span>
+							</p>
+							<p class='leftbox_one_content_p4'>
+								<span class='leftbox_one_content_p1_t1'>玉锦</span>
+								<span class='leftbox_one_content_p1_t2'>986531</span>
+							</p>
+							<p class='leftbox_one_content_p5'>
+								<span class='leftbox_one_content_p1_t1'>李笑云</span>
+								<span class='leftbox_one_content_p1_t2'>821424</span>
+							</p>
+							<p class='leftbox_one_content_p6'>
+								<span class='leftbox_one_content_p1_t1'>杨尚礼</span>
+								<span class='leftbox_one_content_p1_t2'>634313</span>
+							</p>
+							<p class='leftbox_one_content_p7'>
+								<span class='leftbox_one_content_p1_t1'>朱娇</span>
+								<span class='leftbox_one_content_p1_t2'>546579</span>
+							</p>
+							<p class='leftbox_one_content_p8'>
+								<span class='leftbox_one_content_p1_t1'>赵俊</span>
+								<span class='leftbox_one_content_p1_t2'>506871</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- 第二个 -->
+				<div class='leftbox_two'>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
+				<!-- 第三个 -->
+				<div class='leftbox_three'>
+					<div class='leftbox_three_top'>
+						<a href="#" id='leftbox_three_top_a' class='leftbox_three_top_a1'>用户贡献排行</a>
+						<a href="#" class='leftbox_three_top_a2'>用户下载排行</a>
+					</div>
+					<div class='leftbox_three_content_box'>
+						<div class='leftbox_three_content_box_h'>
+							<div class='leftbox_three_content'>
+								<div class='leftbox_three_content_t'>
+									<span>名称</span>
+									<span>贡献值</span>
+								</div>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>张军勇</span>
+									<span>3254224</span>
+								</p>
+							</div>
+							<div class='leftbox_three_content'>
+								<div class='leftbox_three_content_t'>
+									<span>名称</span>
+									<span>贡献值</span>
+								</div>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+								<p class='leftbox_three_content_p'>
+									<i></i>
+									<span>李志灯</span>
+									<span>2913562</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 中部 （名师工作室）-->
+			<div class='teacher'>
+				<div class='teacher_top'>
+					<i></i>
+					<span>名师工作室</span>
+					<span>更多>></span>
+				</div>
+				<div class='teacher_content'>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/15.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<i class='teacher_content_solid'></i>
+				</div>
+			</div>
+			<!-- 优秀教师空间 -->
+			<div class='teacher'>
+				<div class='teacher_top'>
+					<i></i>
+					<span>优秀教师空间</span>
+					<span>更多>></span>
+				</div>
+				<div class='teacher_content'>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/14.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/14.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<div class='teacher_element'>
+						<a href="#">
+							<img src="psd/img/14.png" alt="">
+						</a>
+						<span class='teacher_element_t'>李文杰工作室</span>
+						<p class='teacher_element_p'>学科：<span>初中化学</span></p>
+						<p class='teacher_element_p1'>文章数：<span>245639</span>个</p>
+						<p class='teacher_element_p1'>浏览数：<span>266235</span>次</p>
+					</div>
+					<i class='teacher_content_solid'></i>
+					<div class='teacher_content_people'>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+						<a href="#">
+							<img src="psd/img/25.png" alt="">
+							<span>张小娟</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 课本介绍栏 -->
+			<div class='book'>
+				<div class='book_top'>
+					<a href="#" id='book_top_a' class='book_topa1'>按学科</a>
+					<a href="#" class='book_topa2'>按版本</a>
+					<a href="#" class='book_topa3'>按专题</a>
+				</div>
+				<!-- 第一个 -->
+				<div class='book_content_1' id='book_content_wrap'>
+					<div class='book_content_1_tr'>
+						<a href="#">
+							<i></i>
+							<span>语文</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>语文</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>语文</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>语文</span>
+						</a>
+					</div>
+					<div class='book_content_1_tr1'>
+						<a href="#">
+							<i></i>
+							<span>数学</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>数学</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>数学</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>数学</span>
+						</a>
+					</div>
+				</div>
+				<!-- 第二个 -->
+				<div class='book_content_2'>
+					<div class='book_content_1_tr'>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+					</div>
+					<div class='book_content_1_tr1'>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>南方出版社</span>
+						</a>
+					</div>
+				</div>
+				<!-- 第三个 -->
+				<div class='book_content_3'>
+					<div class='book_content_1_tr'>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+					</div>
+					<div class='book_content_1_tr1'>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+						<a href="#">
+							<i></i>
+							<span>一师一优课</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 惟楚有才图 -->
+			<a href="#" class='wcyc'>
+				<img src="psd/img/ad_05.jpg" alt="">
+			</a>
+			<!-- 资源统计栏 -->
+			<div class='ostatistics'>
+				<div class='ostatistics_top'>
+					<i></i>
+					<span>资源统计</span>
+				</div>
+				<div class='ostatistics_content'>
+					<p class='ostatistics_content_p'>
+						资源总数量：
+						<span>2200239 个</span>
+					</p>
+					<p class='ostatistics_content_p'>
+						资源总容量：
+						<span>1998.28 GB</span>
+					</p>
+					<p class='ostatistics_content_p'>
+						注册用户：
+						<span>499636 个</span>
+					</p>
+					<p class='ostatistics_content_p'>
+						资源访问次数
+						<span>4404099 次</span>
+					</p>
+				</div>
+			</div>
+			<!-- 课堂栏 -->
+			<div class='classroom'>
+				<div class='classroom_top'>
+					<i></i>
+					<span>三类课堂</span>
+					<a href="#" class='classroom_a1' id='classroom_abg'>网络课堂</a>
+					<a href="#" class='classroom_a2'>名师讲堂</a>
+					<a href="#" class='classroom_a3'>专递课堂</a>
+				</div>
+				<div class='classroom_content1' id='classroom_content_b'>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>水彩画初级练习</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>水彩画初级练习</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>水彩画初级练习</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>水彩画初级练习</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>水彩画初级练习</span>
+					</a>
+				</div>
+				<div class='classroom_content2'>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>植物的光合作用</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>植物的光合作用</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>植物的光合作用</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>植物的光合作用</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>植物的光合作用</span>
+					</a>
+				</div>
+				<div class='classroom_content3'>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>分式的乘除</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>分式的乘除</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>分式的乘除</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>分式的乘除</span>
+					</a>
+					<a href="#" class='classroom_content_a'>
+						<img src="psd/img/35.png" alt="">
+						<span>分式的乘除</span>
+					</a>
+				</div>
+			</div>
+			<!-- 友情链接 -->
+			<div class='bottom_link'>
+				<div class='link_left'>
+					<a href="#">友情链接</a>
+					<i>|</i>
+				</div>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+				<a href="#">中华人民共和国教育部</a>
+			</div>
+			<!-- 底部 -->
+			<div class='bottom'>
+				<p>湖南省基础教育资源公共服务平台版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;站内资源仅限于教育系统内部使用</p>
+				<p>电话：0731-82220187  企业QQ号:800009196  邮箱：hnszyzx@126.com</p>
+				<p>地址:湖南省长沙市文运街23号  邮编410005</p>
+				<p>湘ICP备13005454号-2 <img src="psd/img/pic1.gif" alt=""></p>
+				<p> 最低分辨率1024*768 适用于IE8.0以上-129</p>
+				<p>北京慧之源信息技术有限公司提供技术支持</p>
+			</div>
+		</div>
+	</div>
+
+	<script src='1.js'></script>
+	<script src='2.js'></script>
+	<script>
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,trigger:"click"})
+	</script>
+</body>
+</html>
